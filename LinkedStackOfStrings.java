@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.ListIterator;
 
 public class LinkedStackOfStrings<Item> implements Iterable<Item> {
@@ -28,7 +29,7 @@ public class LinkedStackOfStrings<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> Iterator() {
+    public Iterator<Item> iterator() {
         // TODO Auto-generated method stub
         return iterator;
     }
@@ -50,13 +51,12 @@ public class LinkedStackOfStrings<Item> implements Iterable<Item> {
         }
 
         @Override
-        public Item remoove() {
+        public void remove() {
             try {
                 throw new IllegalAccessException("Cannot call this method");
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
-            return null;
         }
 
     }
