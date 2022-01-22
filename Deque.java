@@ -1,7 +1,9 @@
 import java.util.NoSuchElementException;
-import java.util.Iterator;
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
+
+import java.util.Iterator;
 
 public class Deque<Item> implements Iterable<Item> {
     private Node first;
